@@ -19,3 +19,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+
+// Optional: make team avatar links open in a new tab (already set via target)
+document.addEventListener('click', (e) => {
+  // close nav when clicking outside on small screens
+  const nav = document.querySelector('.nav');
+  const toggle = document.querySelector('.nav-toggle');
+  if (nav && nav.classList.contains('open')) {
+    if (!e.target.closest('.nav') && !e.target.closest('.nav-toggle')) {
+      nav.classList.remove('open');
+    }
+  }
+});
