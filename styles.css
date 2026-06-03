@@ -1,0 +1,25 @@
+/* Simple responsive styles */
+:root{--bg:#f7f7fb;--accent:#2563eb;--text:#0f172a}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;color:var(--text);background:var(--bg);line-height:1.5}
+.container{max-width:960px;margin:0 auto;padding:1rem}
+.site-header{background:#fff;border-bottom:1px solid #e6e9ef}
+.site-header .container{display:flex;align-items:center;gap:1rem}
+.brand{font-weight:700;text-decoration:none;color:var(--text);font-size:1.1rem}
+.nav{margin-left:auto;display:flex;gap:1rem}
+.nav a{text-decoration:none;color:var(--text)}
+.nav-toggle{display:none;background:none;border:0;font-size:1.5rem}
+.hero{padding:3rem 0;background:linear-gradient(90deg,#071029,#0b1220);min-height:72vh;display:flex;align-items:center}
+.hero .container{text-align:center}
+.team-title{margin:0 0 .5rem;color:#ffffff;font-weight:700;font-size:clamp(2.5rem,8vw,6rem);line-height:1;letter-spacing:-0.02em}
+.team-desc{color:rgba(255,255,255,0.9);margin:0 0 1rem;font-size:1.05rem}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:.6rem 1rem;border-radius:6px;text-decoration:none}
+.site-footer{padding:1rem 0;text-align:center;color:#475569}
+section{padding:2rem 0}
+form label{display:block;margin:0.5rem 0}
+input,textarea{width:100%;padding:.5rem;border:1px solid #d1d5db;border-radius:6px}
+@media (max-width:640px){
+  .nav{display:none;position:absolute;top:56px;right:1rem;background:#fff;padding:1rem;border:1px solid #e6e9ef;border-radius:6px;flex-direction:column}
+  .nav-toggle{display:block;margin-left:auto}
+  .team-title{font-size:2.2rem}
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>My First Site</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#">My First Site</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">≡</button>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 class="team-title">Gamakichi</h1>
+        <p class="team-desc">Мы — начинающая команда по Dota 2, намеренная пробираться и забрать The International 15 в Шанхае.</p>
+        <a class="btn" href="#projects">Наши матчи</a>
+      </div>
+    </section>
+    <section id="about" class="container">
+      <h2>About</h2>
+      <p>Short intro about you.</p>
+    </section>
+    <section id="projects" class="container">
+      <h2>Projects</h2>
+      <p>Describe your projects or add links here.</p>
+    </section>
+    <section id="contact" class="container">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <label>Name<input type="text" name="name"></label>
+        <label>Email<input type="email" name="email"></label>
+        <label>Message<textarea name="message"></textarea></label>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">© 2026 My First Site</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
