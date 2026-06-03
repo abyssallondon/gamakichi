@@ -21,4 +21,4 @@ Next steps:
 
 - Personalize content in `index.html`.
 - Add images and more pages.
-- I can set up Git and GitHub workflow for you.
+- I can set up Git and GitHub workflow for you. 
