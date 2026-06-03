@@ -3,13 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>My First Site</title>
+  <meta name="description" content="Gamakichi — начинающая киберспортивная команда Dota 2. Следите за нашими матчами и прогрессом к The International 15 в Шанхае.">
+  <title>Gamakichi — Dota 2 Team</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <a class="brand" href="#">My First Site</a>
+      <a class="brand" href="#">Gamakichi</a>
       <button class="nav-toggle" aria-label="Toggle navigation">≡</button>
       <nav class="nav">
         <a href="#about">About</a>
@@ -22,17 +25,37 @@
     <section class="hero">
       <div class="container">
         <h1 class="team-title">Gamakichi</h1>
-        <p class="team-desc">Мы — начинающая команда по Dota 2, намеренная пробираться и забрать The International 15 в Шанхае.</p>
+        <p class="team-desc">Мы — начинающая команда по Dota 2, целеустремлённо пробираемся к вершинам и нацелены забрать The International 15 в Шанхае.</p>
         <a class="btn" href="#projects">Наши матчи</a>
       </div>
     </section>
     <section id="about" class="container">
-      <h2>About</h2>
-      <p>Short intro about you.</p>
+      <h2>О команде</h2>
+      <p>Gamakichi — молодая, амбициозная команда Dota 2. Мы тренируемся, участвуем в турнирах и улучшаем синергию, чтобы достойно выступить на международной сцене.</p>
     </section>
     <section id="projects" class="container">
-      <h2>Projects</h2>
-      <p>Describe your projects or add links here.</p>
+      <h2>Матчи и результаты</h2>
+      <p>Здесь будут ссылки на наши недавние игры, расписание и достижения.</p>
+    </section>
+    <section id="team" class="container team-grid">
+      <h2>Состав</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="avatar">AK</div>
+          <h3>Akira</h3>
+          <p class="role">Carry — Ник: Akira</p>
+        </article>
+        <article class="card">
+          <div class="avatar">RI</div>
+          <h3>Rin</h3>
+          <p class="role">Mid — Ник: Rin</p>
+        </article>
+        <article class="card">
+          <div class="avatar">KO</div>
+          <h3>Koshi</h3>
+          <p class="role">Support — Ник: Koshi</p>
+        </article>
+      </div>
     </section>
     <section id="contact" class="container">
       <h2>Contact</h2>
@@ -45,7 +68,7 @@
     </section>
   </main>
   <footer class="site-footer">
-    <div class="container">© 2026 My First Site</div>
+    <div class="container">© 2026 Gamakichi</div>
   </footer>
   <script src="script.js"></script>
 </body>

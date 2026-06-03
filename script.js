@@ -1,7 +1,21 @@
-document.addEventListener('DOMContentLoaded',function(){
+document.addEventListener('DOMContentLoaded', function () {
   const toggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('.nav');
-  if(toggle){toggle.addEventListener('click',()=>{if(nav.style.display==='flex'){nav.style.display='none'}else{nav.style.display='flex'}})}
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+    // close nav when clicking a link
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+  }
+
   const form = document.getElementById('contact-form');
-  if(form){form.addEventListener('submit',e=>{e.preventDefault();alert('Thanks — form submission would go here.')} )}
+  if (form) {
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      // simple confirmation — replace with real submit later
+      alert('Спасибо! Ваше сообщение получено.');
+      form.reset();
+    });
+  }
 });
